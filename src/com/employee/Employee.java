@@ -54,14 +54,14 @@ public class Employee implements Comparable<Employee>{
 		return this.empID - o.empID;
 	}
 	
-//	public static Comparator<Employee> NameComparator = new Comparator<Employee>() {
-//		
-//		@Override
-//		public int compare(Employee e1, Employee e2) {
-//			return e1.getName().compareTo(e2.getName());
-//		}
-//	};
+	public static Comparator<Employee> NameComparator = new Comparator<Employee>() {
+		
+		@Override
+		public int compare(Employee e1, Employee e2) {
+			return e1.getName().compareTo(e2.getName());
+		}
+	};
 	
-	public static Comparator<Employee> NameComparator = (e1, e2) -> {return e1.getName().compareTo(e2.getName());};
+	//public static Comparator<Employee> NameComparator = (e1, e2) -> {return e1.getName().compareTo(e2.getName());};
 
 }
